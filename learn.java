@@ -40,7 +40,7 @@ class learn {
     }
 }
 
-/*------------Reverse String using function------------*/
+/*------------Reverse String using function return------------*/
 
 // import java.util.*;
 // public class Test{
@@ -58,6 +58,27 @@ class learn {
 //         // Test obj = new Test();
 //         String rstr=ReverseString(str);
 //         System.out.print("Reverse String is "+rstr);
+//     }
+// }
+
+/*------------Reverse String using void function------------*/
+
+// import java.util.*;
+// class Test{
+//     public void Rev(String str){
+//         String rstr="";
+//         for(int i=0;i<=str.length()-1;i++){
+//             rstr=str.charAt(i)+rstr;
+//         }
+//         System.out.println(rstr);
+//     }
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter a String to Reverse : ");
+//         String str=sc.nextLine();
+//         System.out.println("Reverse string is : ");
+//         Test obj = new Test();
+//         obj.Rev(str);
 //     }
 // }
 
@@ -675,6 +696,38 @@ class Total{
 //         Animal cat = new Cat();
 //         cat.sleep();
 //         cat.sound();
+//     }
+// }
+
+/*--------------Abstract Class------------ */
+
+// abstract class Car{
+//     abstract void Company();
+//     public void Brand(){
+//         System.out.println("Model is Verna");
+//     }
+// }
+// class Model extends Car{
+//     public void Company(){
+//         System.out.println("Company is Hyundai");
+//     }
+// }
+// class Milage extends Car{
+//     public void Brand(){
+//         System.out.println("Brand");
+//     }
+//     public void Company(){
+//         System.out.println("Milage is 16km/ltr");
+//     }
+// }
+// public class Main{
+//     public static void main(String[] args){
+//         Car model = new Model();
+//         model.Company();
+//         model.Brand();
+//         Car milage = new Milage();
+//         milage.Company();
+//         milage.Brand();
 //     }
 // }
 
