@@ -552,7 +552,7 @@ class Sharique{
     }
 }
 
---------------------Using this keyword------------------
+--------------------Using this keyword in constructor code------------------
 
 class Student{
     String name;
@@ -579,7 +579,7 @@ class TestThis{
     }
 }
 
----------same but another--------------------
+---------same but another constructor program--------------------
 
 class Ration{
     String Wheat;
