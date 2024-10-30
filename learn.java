@@ -434,6 +434,41 @@ class HelloWorld {
     }
 }
 
+-----------------Armstrong number using function method using void----------------
+
+import java.util.*;
+class Armstrong{
+    public static void Arms(int num){
+        int temp=num;
+        int num1=num;
+        int count=0;
+        int ans=0;
+        while(temp>0){
+            int ld = temp%10;
+            count += 1;
+            temp /= 10;
+        }
+        while(num1>0){
+            // Arms();
+            int ld1=num1%10;
+            ans += Math.pow(ld1 , count);
+            num1 /=10;
+        }
+        if(ans == num){
+            System.out.println(num + " is Armstrong");
+        }else{
+            System.out.println(num + " is not an Armstrong "+"coz difference "+ans);
+        }
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number : ");
+        int n = sc.nextInt();
+        Armstrong obj = new Armstrong();
+        obj.Arms(n);
+    }
+}
+
 ----------------- Armstrong without static--------------
 
 import java.util.*;
@@ -730,4 +765,100 @@ class Total{
 //         milage.Brand();
 //     }
 // }
+
+/*--------------Array who is greater------------ */
+
+// import java.util.*;
+// class Compare{
+//     public static void Match(int [] a, int [] b){
+//         int acount=0;
+//         int bcount=0;
+//         for(int i=0;i<a.length;i++){
+//             if(a[i]>b[i]){
+//                 acount++;
+//             }else if(a[i]<b[i]){
+//                 bcount++;
+//             }else if(a[i]==b[i]){
+//                 continue;
+//             }
+//         }
+//         // return new int[]{acount, bcount};
+//         System.out.println(acount + " " + bcount);
+//     }
+// }
+// public class Test{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int n=3;
+//         int [] alice = new int[n];
+//         int [] bob = new int[n];
+//         // System.out.println("Enter array element for Alice ");
+//         for(int i=0;i<alice.length;i++){
+//             alice[i]=sc.nextInt();
+//         }
+//         // System.out.println("Enter array element for Bob ");
+//         for(int j=0;j<bob.length;j++){
+//             bob[j]=sc.nextInt();
+//         }
+//         Compare obj = new Compare();
+//         obj.Match(alice, bob);
+//     }
+// }
+
+/*-------------Array addition------------- */
+
+// import java.io.*;
+// import java.math.*;
+// import java.security.*;
+// import java.text.*;
+// import java.util.*;
+// import java.util.concurrent.*;
+// import java.util.function.*;
+// import java.util.regex.*;
+// import java.util.stream.*;
+// import static java.util.stream.Collectors.joining;
+// import static java.util.stream.Collectors.toList;
+
+// class Result {
+
+//     /*
+//      * Complete the 'aVeryBigSum' function below.
+//      *
+//      * The function is expected to return a LONG_INTEGER.
+//      * The function accepts LONG_INTEGER_ARRAY ar as parameter.
+//      */
+
+//     public static long aVeryBigSum(List<Long> ar) {
+//     // Write your code here
+//     long sum=0;
+//         for(int i=0;i<ar.size();i++){
+//             sum+=ar.get(i);
+//         }
+//         return sum;
+//     }
+    
+// }
+
+// public class Solution {
+//     public static void main(String[] args) throws IOException {
+//         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+//         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+//         int arCount = Integer.parseInt(bufferedReader.readLine().trim());
+
+//         List<Long> ar = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+//             .map(Long::parseLong)
+//             .collect(toList());
+
+//         long result = Result.aVeryBigSum(ar);
+
+//         bufferedWriter.write(String.valueOf(result));
+//         bufferedWriter.newLine();
+
+//         bufferedReader.close();
+//         bufferedWriter.close();
+//     }
+// }
+
+
 

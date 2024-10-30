@@ -1,27 +1,27 @@
-// class Student{
-//     String name;
-//     int roll;
-//     float fee;
-//     Student(String name,int roll){
-//         this.name=name;
-//         this.roll=roll;
-//     }
-//     Student(String name,int roll,float fee){
-//         this(name,roll);
-//         this.fee=fee;
-//     }
-//     void display(){
-//         System.out.println("Student name :"+name+" Roll no."+roll+" Fees: "+fee);
-//     }
-// }
-// class TestThis{
-//     public static void main(String[] args){
-//         Student obj = new Student("Sharique",7);
-//         Student obj1 = new Student("Ahmad",8,5000f);
-//         obj.display();
-//         obj1.display();
-//     }
-// }
+class Student{
+    String name;
+    int roll;
+    float fee;
+    Student(String name,int roll){
+        this.name=name;
+        this.roll=roll;
+    }
+    Student(String name,int roll,float fee){
+        this(name,roll);
+        this.fee=fee;
+    }
+    void display(){
+        System.out.println("Student name :"+name+" Roll no."+roll+" Fees: "+fee);
+    }
+}
+class TestThis{
+    public static void main(String[] args){
+        Student obj = new Student("Sharique",7);
+        Student obj1 = new Student("Ahmad",8,5000f);
+        obj.display();
+        obj1.display();
+    }
+}
 
 // abstract class Animal{
 //     public abstract void sound();
